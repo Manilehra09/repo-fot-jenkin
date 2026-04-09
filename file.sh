@@ -12,7 +12,7 @@ EOF
 
 # 2. Build the image
 # Using sudo if required, or just podman if permissions are set
-sudo podman build -t LMS:latest -f Containerfile .
+sudo podman build -t lms:latest -f Containerfile .
 
 # 3. CLEANUP: Remove old container if it exists
 echo "Cleaning up old containers..."
@@ -21,7 +21,7 @@ sudo podman rm lms-webserver || true
 
 # 4. Run new container
 echo "Starting new container..."
-sudo podman run -d --name lms-webserver -p 8003:80 LMS:latest
+sudo podman run -d --name lms-webserver -p 8003:80 lms:latest
 
 # 5. Verify
 sudo podman ps -a
