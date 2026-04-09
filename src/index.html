@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student LMS Portal</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f0f2f5; }
+        nav { background: #1a73e8; color: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; }
+        .hero { background: white; padding: 40px; text-align: center; border-bottom: 2px solid #e0e0e0; }
+        .container { padding: 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: #1a73e8; }
+        button { background: #1a73e8; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>LMS Portal</h2>
+        <div>Dashboard | Courses | Profile</div>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to the Student Learning Management System</h1>
+        <p>Your one-stop destination for online learning and assignments.</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h3>My Courses</h3>
+            <p>Access your enrolled subjects and lectures.</p>
+            <button>View Courses</button>
+        </div>
+        <div class="card">
+            <h3>Assignments</h3>
+            <p>You have 3 pending tasks for this week.</p>
+            <button>View Tasks</button>
+        </div>
+        <div class="card">
+            <h3>Resources</h3>
+            <p>Download PDFs, videos, and study notes.</p>
+            <button>Download</button>
+        </div>
+    </div>
+    <footer>© 2026 Student LMS Project - Automated Deployment</footer>
+</body>
+</html>
