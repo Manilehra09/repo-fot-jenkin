@@ -29,3 +29,6 @@ sudo podman ps -a
 
 
 echo "FILE UPDATED"
+
+
+echo " File is executed by the Jenkins pipeline."
