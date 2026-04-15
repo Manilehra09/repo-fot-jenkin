@@ -25,3 +25,7 @@ sudo podman run -d --name lms-webserver -p 8003:80 lms:latest
 
 # 5. Verify
 sudo podman ps -a
+
+
+
+echo "FILE UPDATED"
