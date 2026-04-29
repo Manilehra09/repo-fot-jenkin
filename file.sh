@@ -4,7 +4,7 @@ set -e  # This tells the script to exit immediately if any command fails
 cat <<EOF > Containerfile
 FROM docker.io/amazonlinux:latest
 RUN yum install httpd -y 
-COPY ./src/ /var/www/html/
+COPY /jenkins/jenkins/src/* /var/www/html/
 RUN chown -R apache:apache /var/www/html
 EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
